@@ -109,7 +109,7 @@ public:
             std::println("[ERROR] {}", SDL_GetError());
         }
 
-        pixels_.reserve(WINDOW_WIDTH*WINDOW_HEIGHT);
+        pixels_.resize(WINDOW_WIDTH*WINDOW_HEIGHT);
     }
 
     void plot_set() {
